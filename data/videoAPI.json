@@ -1,0 +1,569 @@
+[
+  {
+    "folderId": "biceps_folder",
+    "folderName": "Вправи на біцепс",
+    "dataList": [
+      {
+        "fileId": "BAACAgIAAxkBAAMEaG5lMmbLxZ_aWiGiFVfXr-UI9EkAAlt0AAL0KnlLcroB6VCWTUc2BA",
+        "fileName": "Біцепс з гантелями сидячи",
+        "folderId": "biceps_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAMGaG5lhoeu49PxAAHcmNI9pcoVNTNaAAJgdAAC9Cp5S-VNvC8AAXV7oTYE",
+        "fileName": "Біцепс з гантелями стоячи сидячи молот",
+        "folderId": "biceps_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAMIaG5l4S7I9-gvzoyGzSI_Qlyysq8AAmN0AAL0KnlLL_tuKh81xCg2BA",
+        "fileName": "Біцепс сидячи з супінацією кисті",
+        "folderId": "biceps_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAMKaG5mrYB0tXoKJFsOJgUSdHqh4BIAAnB0AAL0KnlLLMyGAn0OowI2BA",
+        "fileName": "Біцепс у кросовері з канатом молот",
+        "folderId": "biceps_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAMMaG5nKMRc6J0eC4wAAQ21CgncoEmdAAJ5dAAC9Cp5S3if7m5wJbT5NgQ",
+        "fileName": "Біцепс у кросовері однією рукою з опорою",
+        "folderId": "biceps_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAMOaG5ni41QERPHwrGxnPw9Xt_v60UAAnt0AAL0KnlLgG_Nn39g06U2BA",
+        "fileName": "Біцепс у кросовері сидячи",
+        "folderId": "biceps_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAMQaG5oaU2MnK8AATKEgh8pyb6H1qWiAAKLdAAC9Cp5Sz7gjZwY7QLpNgQ",
+        "fileName": "Підйом штанги на біцепс стоячи",
+        "folderId": "biceps_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAMSaG5ofq9BrfCyQdDQ_s215W1kT1EAAox0AAL0KnlLIVnEVlECgck2BA",
+        "fileName": "Підйом W-штанги на біцепс стоячи зворотнім хватом",
+        "folderId": "biceps_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAMUaG5olJRwI3sr7NTzowNpX1S2GrQAAot4AAJ_03FLz763EpiAEgs2BA",
+        "fileName": "Підйом штанги W на біцепс стоячи",
+        "folderId": "biceps_folder"
+      }
+    ]
+  },
+  {
+    "folderId": "triceps_folder",
+    "folderName": "Вправи на тріцепс",
+    "dataList": [
+      {
+        "fileId": "BAACAgIAAxkBAANcaHJcK32DWaYQ-Gkuo7iYYgHv5OAAAvqAAALxTJFLr-6wY3rvyL02BA",
+        "fileName": "Відтискання від лавки вузьким хватом",
+        "folderId": "triceps_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAANeaHJcVurByLntb7mf_mgbql6fsYEAAvyAAALxTJFLLBEw6n6jbMU2BA",
+        "fileName": "Кік-бек з гантелею",
+        "folderId": "triceps_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAANgaHJceJO1NknJynY90yZpccj32FEAAv6AAALxTJFLAxREnXjKq2Q2BA",
+        "fileName": "Кік-бек у кроссовері",
+        "folderId": "triceps_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAANiaHJcmX5hwafPVJ5rHSGfNCUw9awAA4EAAvFMkUtNTXMKf01YDDYE",
+        "fileName": "Перехрестні розгинання на тріцепс у кроссовері",
+        "folderId": "triceps_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAANkaHJczeD1RCxgQCFaUh6YorZTaL4AAjB7AAK5g5BLgZ8Q7wjryCE2BA",
+        "fileName": "Розгинання на тріцепс канатом",
+        "folderId": "triceps_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAANmaHJc5_8cdgJ7R96F4bGP6gi_WpQAAgGBAALxTJFLlraxvCdomkg2BA",
+        "fileName": "Розгинання на тріцепс прямою рукояткою",
+        "folderId": "triceps_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAANoaHJdGDOxKcmSHiAQXNCT2A1nWTQAAgF5AAJ7CpFL7IKUxkVk2_02BA",
+        "fileName": "Розгинання на тріцепс у кроссовері трикутною рукояткою лежачи",
+        "folderId": "triceps_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAANqaHJdLpYx2lZueBJQWqWzdoxPZfkAAjN7AAK5g5BLzdyBi8V8b6w2BA",
+        "fileName": "Французський жим з гантелями лежачи",
+        "folderId": "triceps_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAANsaHJdUh4gS9FFNd2_SPfm9VltT6kAAgSBAALxTJFLFiDBDo6-las2BA",
+        "fileName": "Французський жим з W-грифом лежачи",
+        "folderId": "triceps_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAANuaHJdem5HTOamgxWJX6_BX6XD6H8AAgiBAALxTJFLHNkGrq_XqcU2BA",
+        "fileName": "Французський жим у кроссовері лежачи",
+        "folderId": "triceps_folder"
+      }
+    ]
+  },
+  {
+    "folderId": "legs_folder",
+    "folderName": "Вправи на ноги",
+    "dataList": [
+      {
+        "fileId": "BAACAgIAAxkBAAN0aHJgG6vpebSKoEGG3_OxtP4gluwAAiyBAALxTJFLsmHmxvtrAoM2BA",
+        "fileName": "Болгарські випади у МС",
+        "folderId": "legs_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAN2aHJgPu8QovkelUyUrbSTE3HgvzEAAi-BAALxTJFL0TnXe8589c82BA",
+        "fileName": "Випади з гантелями назад",
+        "folderId": "legs_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAN4aHJgW8uLkoXFbpIbbdcT5woQ9AwAAmx7AAK5g5BLeIbC3WJLBbc2BA",
+        "fileName": "Відведення ноги у кроссовері",
+        "folderId": "legs_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAN6aHJggEXMuNWFCH2OY9JtA4D5n6QAAjiBAALxTJFLVltnlgOQOy42BA",
+        "fileName": "Гіперекстензія на сідниці",
+        "folderId": "legs_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAN8aHJgmQF0JYuDYDrjq5L7XiNZ-7gAAjmBAALxTJFL8B3VWPZElPs2BA",
+        "fileName": "Дефіцитні випади назад зі штангою",
+        "folderId": "legs_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAN-aHJgwH7_E1yfWMtSNOSnYRIhz4AAAj6BAALxTJFLM-zXBelNLSo2BA",
+        "fileName": "Жим ногами у МС",
+        "folderId": "legs_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAOAaHJg2nEYOfZZTIZRAdRrReqJb4cAAj-BAALxTJFLYwJBKZAbyac2BA",
+        "fileName": "Згинання ніг лежачи",
+        "folderId": "legs_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAOCaHJg7kn_rwcm_SmU_0GOG-g7QakAAkCBAALxTJFLTAbinlyiRN82BA",
+        "fileName": "Фронтальні випади в МС з лямками",
+        "folderId": "legs_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAOEaHJhCB_KysTXOAXWqic3E0xV9d8AAkOBAALxTJFLiJltD3eIO-E2BA",
+        "fileName": "Нахили зі штангою",
+        "folderId": "legs_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAOGaHJhJ8X-xw7_4Kgaa6DtMxZLhfYAAkaBAALxTJFLwLg7Zd8w3IA2BA",
+        "fileName": "Нахили у МС",
+        "folderId": "legs_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAOIaHJhSey9A8fUX9zE8Z_egEiuYlsAAkmBAALxTJFLE62Tc84QhdY2BA",
+        "fileName": "Присідання Гоблет",
+        "folderId": "legs_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAOKaHJhceBpXQFM_CoBmJv5Asz3Qz8AAkuBAALxTJFLoq7S_JO-mBs2BA",
+        "fileName": "Присідання з гантелею сумо",
+        "folderId": "legs_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAOMaHJhka1fZmM-N3eXJ_d9R0Ndtt0AAkyBAALxTJFLm2rAl8wOQRU2BA",
+        "fileName": "Присідання з гирею сумо",
+        "folderId": "legs_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAOOaHJhsiM-fFWJ3AquBEMrhgegCtQAAk6BAALxTJFLU1ZcmO42W-U2BA",
+        "fileName": "Присідання зі штангою на спині",
+        "folderId": "legs_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAOQaHJh-YNoOL6hO-anv95DBNMe0h0AAoN5AAJ7CpFLH5NrEfRLEwo2BA",
+        "fileName": "Присідання зі штангою сумо",
+        "folderId": "legs_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAOSaHJiGCvtpZ_Cm3sdX9DKIuvb2bEAAlKBAALxTJFLoV8pQxobNLg2BA",
+        "fileName": "Присідання на мітлі у МС",
+        "folderId": "legs_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAOUaHJiMQ0tyVfvqDB6wQP8L7TmdMMAAlOBAALxTJFLAsZ5uaE7Xl82BA",
+        "fileName": "Присідання у кроссовері з акцентом на квадріцепс",
+        "folderId": "legs_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAOWaHJiUg-2DkzgnNgphzH6vAHidVgAAliBAALxTJFL0zCU6tpET1w2BA",
+        "fileName": "Присідання у МС",
+        "folderId": "legs_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAOYaHJicCW92g41CfVb_hIaJPOQT4wAAlqBAALxTJFLdchndgr63Vo2BA",
+        "fileName": "Розгинання ніг у тренажері сидячи",
+        "folderId": "legs_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAOaaHJihTQLvZzIQ9soyNHnqeLoP00AAluBAALxTJFLWS7XJBZUbY02BA",
+        "fileName": "Руминська тяга зі штангою класика",
+        "folderId": "legs_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAOcaHJioy0NUT2QqHENdvlovTSe_lkAAl2BAALxTJFLxseM7ZvOiN02BA",
+        "fileName": "Руминська тяга зі штангою сумо",
+        "folderId": "legs_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAOeaHJivLRufPCxLNNsCaCxPNdwBskAAmSBAALxTJFLC_Ca-Gl5r5g2BA",
+        "fileName": "Сідничний міст зі штангою",
+        "folderId": "legs_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAOgaHJi2QfUJyXUPSj0l8ffqmOJ7YMAAmaBAALxTJFL2QYmO0lKGqw2BA",
+        "fileName": "Сідничний міст у тренажері",
+        "folderId": "legs_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAOiaHJi9GcR_ZUdIvilwa8MECPm2qMAAmiBAALxTJFLlRXhCkqrY942BA",
+        "fileName": "Фронтальні присідання у МС",
+        "folderId": "legs_folder"
+      }
+    ]
+  },
+  {
+    "folderId": "back_folder",
+    "folderName": "Вправи на спину",
+    "dataList": [
+      {
+        "fileId": "BAACAgIAAxkBAAOnaHJmNgNneJoS-uEMZvDI5e4vMHkAAoyBAALxTJFL4IamZat-_lA2BA",
+        "fileName": "Австралійські підтягування",
+        "folderId": "back_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAOpaHJmUU899KdL5u_X9vcac9q0fAQAAo-BAALxTJFLgqkvaoE_L-A2BA",
+        "fileName": "Горизонтальна гіперекстензія",
+        "folderId": "back_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAOraHJmbJQ35ZGlB1K6HphW3RIFjDoAApCBAALxTJFLgwy7j-luBck2BA",
+        "fileName": "Підтягування на перекладині",
+        "folderId": "back_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAOtaHJmjP1W99oW_6rHqB30osoqVbwAApKBAALxTJFLoAw4ds-9lfU2BA",
+        "fileName": "Підтягування паралельним хватом",
+        "folderId": "back_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAOvaHJmoKIQwxX12JtI0KndgqkGwsUAApSBAALxTJFLAAHanex3cKDBNgQ",
+        "fileName": "Підтягування у TRX",
+        "folderId": "back_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAOxaHJmt0_oFgjWsx-PY_ZRlpBXVv0AApeBAALxTJFLwgoi22tTOm82BA",
+        "fileName": "Полуовер у кроссовері",
+        "folderId": "back_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAOzaHJm0zh7XG_joYT3ceng69iddx0AAp2BAALxTJFLzTxwAAHaAo7KNgQ",
+        "fileName": "Станова тяга",
+        "folderId": "back_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAO1aHJm8C42wlnjQSWj1Fx_2n2k6icAAqCBAALxTJFL4UVeqnk448c2BA",
+        "fileName": "Т-Тяга грифу",
+        "folderId": "back_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAO3aHJnIOJ9oDwEY0TkaAmEn6ZZBwQAAqOBAALxTJFLXL7tJZbvLoE2BA",
+        "fileName": "Тяга в наклоні до поясу у МС",
+        "folderId": "back_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAO5aHJnN96JYs6ilwiRZAJhWdbZ29wAAqWBAALxTJFLalwwjza-pN42BA",
+        "fileName": "Тяга в наклоні у кроссовері",
+        "folderId": "back_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAO7aHJn2TD-Ur73xuNBWRjbCX3s9kAAArGBAALxTJFLRdViOSITvrU2BA",
+        "fileName": "Тяга вертикальна до грудей паралельним хватом",
+        "folderId": "back_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAO9aHJn9MlSetSDUDizYxAc4mj_x7sAArSBAALxTJFLC-FZ9h7rMFA2BA",
+        "fileName": "Тяга вертикальна у кроссовері з опорою",
+        "folderId": "back_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAO_aHJoGqpqPCg7Q6qWviGbzASPfJYAAraBAALxTJFLgiA0nGtoVAc2BA",
+        "fileName": "Тяга вертикального блоку до грудей широким хватом",
+        "folderId": "back_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAPBaHJoRYo9oipu5nT-O4K7IkPcOGIAAreBAALxTJFLmxeBqLytrfA2BA",
+        "fileName": "Тяга вертикального блоку до грудей якір",
+        "folderId": "back_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAPDaHJoWTUvo14bk1Ptk5YVmePTV7gAArqBAALxTJFLsKGc6ZBTgTA2BA",
+        "fileName": "Тяга вертикального блоку за голову",
+        "folderId": "back_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAPFaHJodyWwmI7ijLkSFeofBDDrFHUAAr6BAALxTJFLCMbkPrV7k0Y2BA",
+        "fileName": "Тяга вертикального блоку лежачи на спині",
+        "folderId": "back_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAPHaHJola1KUJUpdki5b1zDjwbgDD8AAsSBAALxTJFLFnW3C7TlTOc2BA",
+        "fileName": "Тяга гантелі до поясу",
+        "folderId": "back_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAPJaHJot0FwwBr9Bvde8kIdsYfPM3oAAsaBAALxTJFL2llc8-yY8jc2BA",
+        "fileName": "Тяга гантель у наклоні без опори",
+        "folderId": "back_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAPLaHJo2DsTAhXhKHeFofgpnfHoutoAAsqBAALxTJFLoScp66k41V02BA",
+        "fileName": "Тяга горизонтальна до поясу",
+        "folderId": "back_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAPNaHJo844Q2wtzCYlJF-Bjv8OOx5oAAgR6AAJ7CpFL-p4RlwxvQig2BA",
+        "fileName": "Тяга горизонтальна широким хватом до грудей",
+        "folderId": "back_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAPPaHJpDEUOtcagt5ZsLaDBr0ON0e0AAs-BAALxTJFLgZtyzZAv1iQ2BA",
+        "fileName": "Тяга горизонтального блоку до грудей якір",
+        "folderId": "back_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAPRaHJpKcsu134Ysgf_GQ-2W5Et3UoAAtGBAALxTJFLAAERYtP3CbPxNgQ",
+        "fileName": "Тяга горизонтального блоку однією рукою",
+        "folderId": "back_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAPTaHJpT-Rh90lAdHcFwbrB4nC7ec4AAtWBAALxTJFLvI7tpmMoXc02BA",
+        "fileName": "Тяга до поясу гантель лежачи",
+        "folderId": "back_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAPVaHJpcpwo5Uvqq2lNSD82zcxw1goAAt2BAALxTJFL0gG69vwlnWo2BA",
+        "fileName": "Тяга однією рукою у кроссовері до поясу",
+        "folderId": "back_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAPXaHJporR9Ito8NTYeUgXzNq2z_y4AAuCBAALxTJFLeD8q6kAvaR82BA",
+        "fileName": "Тяга однією рукою у кроссовері з верхньої позиції",
+        "folderId": "back_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAPZaHJp9rNTJ3C9PondRC0EA9qnFeAAAhd6AAJ7CpFLtHpyhBSi0-I2BA",
+        "fileName": "Тяга у кроссовері з опорою",
+        "folderId": "back_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAPbaHJqF32CztM7JiCkvfpnL77ZfHUAAuqBAALxTJFLsUY0L2-wNCs2BA",
+        "fileName": "Тяга широким хватом з опорою",
+        "folderId": "back_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAPdaHJqMS_xSEESxFUa-oMmNPxgWmsAAuyBAALxTJFLkqgxk4Z5IpI2BA",
+        "fileName": "Тяга штанги в наклоні до поясу",
+        "folderId": "back_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAPfaHJqRJcmgHkcc_vuphNTUA08Xl8AAu-BAALxTJFLw7Lbdu4PFqY2BA",
+        "fileName": "Шраги з гантелями",
+        "folderId": "back_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAPhaHJqWX21KKH-atRNJW6nBFEAAeMuAAIiegACewqRS8jP1Cbc89V-NgQ",
+        "fileName": "Шраги зі штангою",
+        "folderId": "back_folder"
+      }
+    ]
+  },
+  {
+    "folderId": "chest_folder",
+    "folderName": "Вправи на груди",
+    "dataList": [
+      {
+        "fileId": "BAACAgIAAxkBAAPwaHNnE-xVp1a5Hl_I3uVWPYOKWO8AAn9vAAL-RqFL-KvCQFx-aq42BA",
+        "fileName": "Віджимання на брусах",
+        "folderId": "chest_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAPyaHNnSz1KJpa4xlxDNkQgvqIC99kAAoNvAAL-RqFLR0ZaVSHEPkM2BA",
+        "fileName": "Жим гантель у горизонталі",
+        "folderId": "chest_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAP0aHNncSovdrC8ey63I_T9mpT2jH8AAoZvAAL-RqFLkH5Wsay0cho2BA",
+        "fileName": "Жим гантель у наклоні",
+        "folderId": "chest_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAP2aHNniFUrabJSaSHMY9kFuEKXnhMAAohvAAL-RqFL_ZaCGYeGdD02BA",
+        "fileName": "Жим горизонтальний у МС",
+        "folderId": "chest_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAP4aHNnoJdoovMJk5RAuEO-FaoKWfoAAnKAAAJ7CplLqQuwc44PJp42BA",
+        "fileName": "Жим наклонний у МС",
+        "folderId": "chest_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAP6aHNnxOf6tfCpm6uGU-Ju71UEo0EAAotvAAL-RqFLJpOs0aEWrRY2BA",
+        "fileName": "Жим штанги в наклоні",
+        "folderId": "chest_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAP8aHNn25rUW3v3SKPe9pwL2QaB45QAAo5vAAL-RqFLZlbqyfVEHTk2BA",
+        "fileName": "Жим штанги на горизонталі",
+        "folderId": "chest_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAP-aHNoAZxAxP919-Wx50W5BywFrysAAo9vAAL-RqFLyihHZbDbBBQ2BA",
+        "fileName": "Зведення у кроссовері лежачи",
+        "folderId": "chest_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAIBAAFoc2gtwA3FPQU6vWIKQagJrvwLZwACkW8AAv5GoUtpyp7JfqiiNDYE",
+        "fileName": "Зведення у кроссовері сидячи",
+        "folderId": "chest_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAIBAmhzaFSUthsnm9LvaxVkUEvqp4fWAAKTbwAC_kahS2If93Ox3jYyNgQ",
+        "fileName": "Зведення у кроссовері стоячи",
+        "folderId": "chest_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAIBBGhzaHXIQKolbwo3k-URxXoz1VK4AAKWbwAC_kahS3QpGfLmLne3NgQ",
+        "fileName": "Розведення гантель в наклоні",
+        "folderId": "chest_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAIBBmhzaJmT919jveCYSN2zvxgsjlyzAAKXbwAC_kahS4iZU0oUqX_CNgQ",
+        "fileName": "Розведення гантель на горизонталі",
+        "folderId": "chest_folder"
+      }
+    ]
+  },
+  {
+    "folderId": "deltoids_folder",
+    "folderName": "Вправи на дельти",
+    "dataList": [
+      {
+        "fileId": "BAACAgIAAxkBAAIBDWhzl_UUXOLKBkvwjoGHfkTLZrdWAAKWcQAC_kahSy-A0Zh28ahrNgQ",
+        "fileName": "Відведення для задньої дельти у дельтомашині",
+        "folderId": "deltoids_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAIBD2hzmDTjGfgmWPwHLfo5ts-VMXTpAAKYcQAC_kahS6e97P_YVEClNgQ",
+        "fileName": "Відведення для середньої дельти у дельтомашині",
+        "folderId": "deltoids_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAIBEWhzmFuLdCnWtym9M3tjWeNFPoiFAAKacQAC_kahS-915RmQamR_NgQ",
+        "fileName": "Відведення у кроссовері в сторони для середньої дельти",
+        "folderId": "deltoids_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAIBE2hzmIhneE4pnIHrOPLnEUhRKVaIAAKdcQAC_kahS8bTNyM3fZyzNgQ",
+        "fileName": "Відведення у кроссовері для задньої дельти",
+        "folderId": "deltoids_folder"
+      },      
+      {
+        "fileId": "BAACAgIAAxkBAAIBFWhzmLRagWELP_QGNFWsFDEft-LpAAKhcQAC_kahSyzQNfBSmnn8NgQ",
+        "fileName": "Жим гантель сидячи",
+        "folderId": "deltoids_folder"
+      },      
+      {
+        "fileId": "BAACAgIAAxkBAAIBF2hzmOCee9eahjPf43kZ2pDuVQasAAKkcQAC_kahS1dasj0ylQTSNgQ",
+        "fileName": "Жим сидячи у машині Смітта без опори",
+        "folderId": "deltoids_folder"
+      },      
+      {
+        "fileId": "BAACAgIAAxkBAAIBGWhzmQJAQc2FS-UFobjWQRl_pl2FAAKocQAC_kahS20l6SXyzuS9NgQ",
+        "fileName": "Жим сидячи у машині Смітта з опорою",
+        "folderId": "deltoids_folder"
+      },      
+      {
+        "fileId": "BAACAgIAAxkBAAIBG2hzmSiJHDhCyrdGoh-AiOMJSF_sAAKrcQAC_kahSxjaYSC1wNUpNgQ",
+        "fileName": "Жим штанги сидячи вгору",
+        "folderId": "deltoids_folder"
+      },      
+      {
+        "fileId": "BAACAgIAAxkBAAIBHWhzmVuJmOSoJsqdu4i7CmGKv-bkAAKscQAC_kahS2cL0yD1nogAATYE",
+        "fileName": "Махи гантель в сторони з опорою",
+        "folderId": "deltoids_folder"
+      },      
+      {
+        "fileId": "BAACAgIAAxkBAAIBH2hzmZKuoKgYL3_1xwfxQekGq8FaAAKvcQAC_kahS5Pgw2c0-g_vNgQ",
+        "fileName": "Махи гантель в сторони сидячи",
+        "folderId": "deltoids_folder"
+      },      
+      {
+        "fileId": "BAACAgIAAxkBAAIBIWhzmcgpqq-bl93pBMFhjEaYnk0UAAKxcQAC_kahS56CpZjGp8dXNgQ",
+        "fileName": "Махи гантель назад в нахилі",
+        "folderId": "deltoids_folder"
+      },      
+      {
+        "fileId": "BAACAgIAAxkBAAIBI2hzmfVO_zPFnYbcQHq-O69GJyfaAAK0cQAC_kahS3I5tKJ6f_08NgQ",
+        "fileName": "Махи гантель перед собою",
+        "folderId": "deltoids_folder"
+      },      
+      {
+        "fileId": "BAACAgIAAxkBAAIBJWhzmiu8fXg907LF6wMP-kjxrhAhAAK2cQAC_kahSxTs4dchfH91NgQ",
+        "fileName": "Підйом рук перед собою у кроссовері",
+        "folderId": "deltoids_folder"
+      },      
+      {
+        "fileId": "BAACAgIAAxkBAAIBJ2hzmk29UHe7yeWkIC_IjXMM6LNOAAK3cQAC_kahS44M2QEdGx_RNgQ",
+        "fileName": "Протяжка гантель до грудей",
+        "folderId": "deltoids_folder"
+      },      
+      {
+        "fileId": "BAACAgIAAxkBAAIBKWhzmmuY6ZNjjb_h0obS-Ty-6uUWAAK4cQAC_kahS0mqhoWeNiL3NgQ",
+        "fileName": "Протяжка широким хватом у кроссовері",
+        "folderId": "deltoids_folder"
+      },      
+      {
+        "fileId": "BAACAgIAAxkBAAIBK2hzmo-AL0TMZV4gYEbLJKpN1XkDAAK7cQAC_kahS75FWH72SgvENgQ",
+        "fileName": "Протяжка штанги широким хватом до грудей",
+        "folderId": "deltoids_folder"
+      }
+    ]
+  },
+  {
+    "folderId": "core_folder",
+    "folderName": "Вправи на прес",
+    "dataList": [
+      {
+        "fileId": "BAACAgIAAxkBAAPjaHJrI-hX2rotRSnSgetOo3FGG8oAAjR6AAJ7CpFLu4RhS82scf42BA",
+        "fileName": "Підйом корпусу у GHD тренажері",
+        "folderId": "core_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAPlaHJrPLrGMPSTrgsTsgmKSHTuo3wAAv-BAALxTJFLycOQdRTnFA02BA",
+        "fileName": "Підйом ніг ледачи вгору",
+        "folderId": "core_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAPpaHJrklZIL1pVZoOCY1zW0BPmQoUAAgmCAALxTJFLNXrB66ospZY2BA",
+        "fileName": "Підйом тазу у висі для косих м'язів",
+        "folderId": "core_folder"
+      },
+      {
+        "fileId": "BAACAgIAAxkBAAPnaHJraRFLjeHlGxMhal7B-YHwQHcAAgKCAALxTJFLGDBnwBOFDeA2BA",
+        "fileName": "Підйом тазу у висі на прес",
+        "folderId": "core_folder"
+      }
+    ]
+  }
+]
