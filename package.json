@@ -5,25 +5,29 @@
   "license": "ISC",
   "author": "denlysiak",
   "type": "commonjs",
-  "main": "dist/app.js",
+  "main": "dist/App.js",
   "scripts": {
     "build": "tsc",
-    "start": "node dist/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "NODE_ENV=production node dist/App.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "NODE_ENV=development ts-node src/App.ts"
   },
   "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
     "@types/dotenv": "^6.1.1",
     "@types/node": "^24.0.4",
+    "ts-node": "^10.9.2",
     "tslint": "^5.20.1",
     "typescript": "^5.8.3"
   },
   "dependencies": {
+    "better-sqlite3": "^12.2.0",
     "dotenv": "^16.5.0",
     "googleapis": "^150.0.1",
     "telegraf": "^4.16.3",
     "typegram": "^5.2.0"
   },
-    "engines": {
+  "engines": {
     "node": "24.1",
     "npm": "11.4.2"
   }
