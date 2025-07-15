@@ -6,7 +6,6 @@ import { getFolderList } from './getFolderList';
 import { deletePreviousVideo } from './deletePreviousVideo';
 import { isUserAllowed, addUser, getAllUsers, removeUser } from './userServices';
 import { sendWelcome } from './start';
-import { send } from 'process';
 
 dotenv.config();
 

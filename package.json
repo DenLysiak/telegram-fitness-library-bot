@@ -8,9 +8,9 @@
   "main": "dist/App.js",
   "scripts": {
     "build": "tsc",
-    "start": "NODE_ENV=production node dist/App.js",
+    "start": "node dist/src/App.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "NODE_ENV=development ts-node src/App.ts"
+    "dev": "ts-node src/App.ts"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.13",
