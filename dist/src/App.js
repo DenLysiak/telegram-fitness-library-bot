@@ -36,6 +36,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.db = void 0;
 const telegraf_1 = require("telegraf");
 const dotenv_1 = __importDefault(require("dotenv"));
 const fs = __importStar(require("fs"));
@@ -43,14 +44,16 @@ const getFolderList_1 = require("./getFolderList");
 const deletePreviousVideo_1 = require("./deletePreviousVideo");
 const userServices_1 = require("./userServices");
 const start_1 = require("./start");
+const db_1 = require("../data/db");
+const path_1 = __importDefault(require("path"));
+const googleDriveService_1 = require("./googleDriveService");
 dotenv_1.default.config();
 const bot = new telegraf_1.Telegraf(process.env.BOT_TOKEN);
 const foldersData = JSON.parse(fs.readFileSync('./data/videoAPI.json', 'utf-8'));
 const fileIdMap = new Map();
 let videoCounter = 0;
-const ADMIN_DEVELOPER = parseInt(process.env.ADMIN_DEVELOPER_ID || '0', 10);
-const ADMIN_OWNER = parseInt(process.env.ADMIN_OWNER_ID || '0', 10);
-const ADMINS = [ADMIN_OWNER, ADMIN_DEVELOPER];
+const ADMIN = parseInt(process.env.ADMIN_OWNER_ID || '0', 10);
+const dbPath = path_1.default.resolve(__dirname, '../../data/users.db');
 //method to keep the last video sent per user in memory
 const lastVideoMessageMap = new Map(); // chatId → messageId
 // method to keep the folder state per user in memory
@@ -60,13 +63,10 @@ const pendingRequests = new Map();
 bot.command('start', async (ctx) => {
     const id = ctx.from.id;
     const username = ctx.from.username;
-    if ((0, userServices_1.isUserAllowed)(id) || ADMINS.includes(id)) {
+    if ((0, userServices_1.isUserAllowed)(id) || ADMIN === id) {
         return (0, start_1.sendWelcome)(bot, id);
     }
     ctx.reply(`⛔️ Доступ до бота закрито.\n🆔 Ваш user ID: <code>${id}</code>\nUsername: @${username || 'немає'}`, { parse_mode: 'HTML' });
-    // return ctx.reply('🔐 Ви можете надіслати запит на доступ:', Markup.inlineKeyboard([
-    //   Markup.button.callback('🔓 Запросити доступ', `request_access_${id}`)
-    // ]));
     const requestMsg = await ctx.reply('🔐 Ви можете надіслати запит на доступ:', telegraf_1.Markup.inlineKeyboard([
         telegraf_1.Markup.button.callback('🔓 Запросити доступ', `request_access_${id}`)
     ]));
@@ -83,7 +83,7 @@ bot.action(/request_access_(\d+)/, async (ctx) => {
         return ctx.answerCbQuery('⚠️ Це не ваш запит.');
     }
     ctx.answerCbQuery('📩 Запит надіслано адміністраторам.');
-    bot.telegram.sendMessage(ADMIN_OWNER, `📥 <b>Запит на доступ до бота:</b>\n\n👤 <b>Ім’я:</b> ${from.first_name} ${from.last_name || ''}\n🆔 <b>ID:</b> <code>${from.id}</code>\n🔗 <b>Username:</b> @${from.username || 'немає'}`, {
+    bot.telegram.sendMessage(ADMIN, `📥 <b>Запит на доступ до бота:</b>\n\n👤 <b>Ім’я:</b> ${from.first_name} ${from.last_name || ''}\n🆔 <b>ID:</b> <code>${from.id}</code>\n🔗 <b>Username:</b> @${from.username || 'немає'}`, {
         parse_mode: 'HTML',
         reply_markup: {
             inline_keyboard: [[
@@ -95,14 +95,14 @@ bot.action(/request_access_(\d+)/, async (ctx) => {
 });
 bot.action(/approve_(\d+)/, async (ctx) => {
     const adminId = ctx.from.id;
-    if (!ADMINS.includes(adminId))
+    if (ADMIN !== adminId)
         return ctx.answerCbQuery('⛔️ Ви не адміністратор.');
     const userId = parseInt(ctx.match[1]);
     const chat = await bot.telegram.getChat(userId);
     if (chat.type !== 'private') {
         return ctx.reply('❌ Неможливо додати — це не користувач.');
     }
-    const added = (0, userServices_1.addUser)({
+    const added = await (0, userServices_1.addUser)({
         id: chat.id,
         first_name: chat.first_name,
         last_name: chat.last_name,
@@ -124,7 +124,7 @@ bot.action(/approve_(\d+)/, async (ctx) => {
         pendingRequests.delete(userId);
     }
     if (added) {
-        await ctx.answerCbQuery('✅ Доступ надано!');
+        await ctx.reply(added);
         await ctx.editMessageReplyMarkup(undefined);
         await bot.telegram.sendMessage(userId, '✅ Ваш доступ до бота підтверджено!');
         await (0, start_1.sendWelcome)(bot, userId);
@@ -135,7 +135,7 @@ bot.action(/approve_(\d+)/, async (ctx) => {
 });
 bot.action(/reject_(\d+)/, async (ctx) => {
     const adminId = ctx.from.id;
-    if (!ADMINS.includes(adminId))
+    if (ADMIN !== adminId)
         return ctx.answerCbQuery('⛔️ Ви не адміністратор.');
     const rejectedId = parseInt(ctx.match[1]);
     ctx.answerCbQuery('❌ Запит відхилено.');
@@ -143,33 +143,31 @@ bot.action(/reject_(\d+)/, async (ctx) => {
     bot.telegram.sendMessage(rejectedId, '❌ Ваш запит на доступ було відхилено адміністратором.');
 });
 bot.command('users', async (ctx) => {
-    if (!ADMINS.includes(ctx.from.id))
+    if (ADMIN !== ctx.from.id)
         return ctx.reply('⛔️ Лише для адміністраторів');
     const users = (0, userServices_1.getAllUsers)();
     if (users.length === 0)
-        return ctx.reply('📭 Немає користувачів.');
-    const list = users.map(user => {
-        const fullName = [user.first_name, user.last_name].filter(Boolean).join(' ');
-        const username = user.username ? `@${user.username}` : '(немає username)';
-        return `👤 <b>${fullName}</b>\n🆔 <code>${user.user_id}</code>\n🔗 ${username}`;
-    }).join('\n\n');
-    const buttons = users.map(user => [
-        {
-            text: `❌ Видалити ${user.user_id}`,
-            callback_data: `remove_user_${user.user_id}`
-        }
-    ]);
-    await ctx.reply(list, {
-        parse_mode: 'HTML',
-        reply_markup: { inline_keyboard: buttons }
-    });
+        return ctx.reply('🕵🏼‍♂️ Немає жодного користувача.');
+    for (const user of users) {
+        const text = `👤 <b>${user.first_name || ''} ${user.last_name || ''}</b>
+      🆔 <code>${user.user_id}</code>
+      🔗 @${user.username || 'немає'}`;
+        await ctx.reply(text, {
+            parse_mode: 'HTML',
+            reply_markup: {
+                inline_keyboard: [[
+                        { text: `❌ Видалити ${user.first_name || 'не вказано'} ${user.last_name || user.user_id}`, callback_data: `remove_user_${user.user_id}` }
+                    ]]
+            }
+        });
+    }
 });
 bot.action(/remove_user_(\d+)/, async (ctx) => {
     const adminId = ctx.from.id;
-    if (!ADMINS.includes(adminId))
+    if (ADMIN !== adminId)
         return ctx.answerCbQuery('⛔️ Ви не адміністратор.');
     const userId = parseInt(ctx.match[1]);
-    const removed = (0, userServices_1.removeUser)(userId);
+    const removed = await (0, userServices_1.removeUser)(userId);
     if (removed) {
         await ctx.answerCbQuery('✅ Користувача видалено');
         await ctx.editMessageReplyMarkup(undefined);
@@ -192,7 +190,7 @@ bot.use(async (ctx, next) => {
         // Якщо немає info про користувача, просто пропускаємо
         return;
     }
-    if ((0, userServices_1.isUserAllowed)(userId) || ADMINS.includes(userId)) {
+    if ((0, userServices_1.isUserAllowed)(userId) || ADMIN === userId) {
         // Дозволяємо продовжувати обробку
         return next();
     }
@@ -260,7 +258,20 @@ bot.action('back_to_folders', async (ctx) => {
     await ctx.editMessageText('🏆 Виберіть категорію вправ:', telegraf_1.Markup.inlineKeyboard((0, getFolderList_1.getFolderList)(foldersData)));
 });
 // Start the bot
-bot.launch();
+(async () => {
+    try {
+        console.log('🔽 Завантаження бази даних з Google Drive...');
+        await (0, googleDriveService_1.downloadDatabaseFromDrive)();
+    }
+    catch (err) {
+        console.warn('⚠️ Не вдалося завантажити базу з Google Drive. Створюємо нову.');
+        (0, db_1.initDB)(dbPath);
+    }
+    (0, db_1.initDB)(dbPath);
+    exports.db = (0, db_1.getDB)();
+    await bot.launch();
+    console.log('🤖 Бот запущено!');
+})();
 process.once('SIGINT', () => bot.stop('SIGINT'));
 process.once('SIGTERM', () => bot.stop('SIGTERM'));
 //# sourceMappingURL=App.js.map
