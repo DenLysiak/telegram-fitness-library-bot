@@ -245,6 +245,7 @@ bot.action(/play_video:(.+)/, async (ctx) => {
     // Send new video
     const sentMessage = await ctx.replyWithVideo(fileId, {
         caption: 'Ось ваша вправа:',
+        protect_content: true,
     });
     // 💾 Save new message ID
     lastVideoMessageMap.set(chatId, sentMessage.message_id);
